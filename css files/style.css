@@ -1317,6 +1317,9 @@ h6 {
   .contact-heading>*{
     width: 100%;
   }
+  .info-row > *{
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px){
@@ -1364,6 +1367,7 @@ h6 {
     flex-direction: column-reverse;
   }
   .about-us-img{
+    max-width: 90%;
     padding: 0;
     margin: 0;
   }
@@ -1377,9 +1381,11 @@ h6 {
   section.course-section .container .course-boxes{
     grid-template-columns: repeat(1, 1fr);
   }
+  
   section.contact-section .contact-details .phn-mail-box{
     flex-direction: column;
   }
+  
   .cn-form{
     display: none;
   }
@@ -1389,5 +1395,11 @@ h6 {
     margin-bottom: -10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px){
+  section.course-section .container .course-boxes .course-box{
+    max-width: 70%;
+    justify-self: center;
   }
 }
