@@ -629,6 +629,7 @@ section.msg-side-btn {
   border: 1px solid black;
   bottom: 7.5rem;
   right: 3.75rem;
+  display: none;
 }
 
 section.msg-side-btn .msg-btn {
@@ -650,6 +651,7 @@ section.swip-up-section {
   width: 3.125rem;
   border-radius: 50%;
   background-color: #6c6c6c;
+  display: none;
 }
 
 section.swip-up-section .swip-up-btn {
