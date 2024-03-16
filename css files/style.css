@@ -78,6 +78,13 @@ body {
   background-color: var(--primary);
   /* Margin between buttons */
 }
+.nav-btn a{
+  text-decoration: none;
+  color: white;
+}
+.navbar-nav.ml-auto .nav-btn:hover{
+  background-color: var(--secondary);
+}
 
 .btn-1 {
   background-color: transparent;
@@ -178,6 +185,13 @@ body {
   /* width: 150px; */
   border: 2px solid transparent;
   margin-top: 0.8rem;
+}
+.btn-2 a{
+  text-decoration: none;
+  color: white;
+}
+.btn-2:hover{
+  background-color: var(--secondary);
 }
 /* .btn-2:hover {
   background: var(--secondary);
@@ -776,8 +790,15 @@ section.contact-section .container {
   width: 9rem;
   height: 2.813rem;
   border: none;
+  transition: all ease 0.3s;
 }
-
+.contact-details .phn-mail-box .mail-detail button a{
+  text-decoration: none;
+  color: white;
+}
+.contact-details .phn-mail-box .mail-detail button:hover{
+  background-color: var(--secondary);
+}
 .cn-form {
   background-color: white;
   margin: 1.3rem 1.3rem 0rem 0;
@@ -928,9 +949,15 @@ section.contact-section .contact-details {
   border-radius: 0;
   margin: 4rem 0 0 0;
 }
+.cn-form .detail-form .contact-form button:hover{
+  background-color: var(--secondary);
+}
 
 .cn-form .teacher-page .contact-form button {
   margin: 0rem 0 0 0;
+}
+.cn-form .teacher-page .contact-form button:hover{
+  background-color: var(--secondary);
 }
 
 .hide {
