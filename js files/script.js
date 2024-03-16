@@ -35,13 +35,13 @@ const testimonials = [
   },
   {
     name: 'Saloni Sharma',
-    position: 'SAP Analysis',
+    position: 'SAP Analyst',
     photo: 'img/cartoon-img-4.png',
     text:
       "I have joined Accenture with very good hike and currently i am working with one of the US based giant brand in fashion industry . All thanks to Sir",
   },
   {
-    name: 'Bhumi Pednekar',
+    name: 'Bhumi Patil',
     position: 'Assistant Consultant',
     photo: 'img/cartoon-img-5.png',
     text:
