@@ -669,7 +669,11 @@ section.blog-section {
 
 .blog-data .btn {
   background-color: var(--primary);
+  
+}
+.blog-data .btn a{
   color: white;
+  text-decoration: none;
 }
 
 .blog-data .btn:hover {
