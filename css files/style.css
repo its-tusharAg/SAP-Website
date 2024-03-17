@@ -727,28 +727,33 @@ section.blog-section {
 /* ****chat side btn section***** */
 section.msg-side-btn {
   position: fixed;
-  height: 5rem;
-  width: 5rem;
-  background-color: #fff;
+  height: 5.5rem;
+  width: 5.5rem;
+  border: 10px solid var(--light2);
+  background-color: var(--light2);
   border-radius: 50%;
-  border: 1px solid black;
-  bottom: 7.5rem;
-  right: 3.75rem;
-  display: none;
+  bottom: 6.5rem;
+  right: 3rem;
+  z-index: 1001;
+  animation: jump 0.5s infinite alternate;
+  display: grid;
+  place-items: center;
 }
 
-section.msg-side-btn .msg-btn {
-  position: relative;
-  top: 0.938rem;
-  left: 0.938rem;
+@keyframes jump {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  100% {
+    transform: translateY(-20px); /* End position */
+  }
 }
-
 section.msg-side-btn .msg-btn img {
-  height: 3.125rem;
+  height: 4.5rem;
 }
 
 /* ****swip-up btn**** */
-section.swip-up-section {
+/* section.swip-up-section {
   position: fixed;
   bottom: 2.5rem;
   right: 4.375rem;
@@ -756,7 +761,6 @@ section.swip-up-section {
   width: 3.125rem;
   border-radius: 50%;
   background-color: #6c6c6c;
-  display: none;
 }
 
 section.swip-up-section .swip-up-btn {
@@ -767,6 +771,33 @@ section.swip-up-section .swip-up-btn {
 
 section.swip-up-section .swip-up-btn img {
   height: 1.625rem;
+} */
+
+#progress{
+  /* background-color: var(--secondary); */
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1001;
+  /* display: none; */
+}
+#progress-value{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: black;
 }
 
 /* *****contact page code***** */
@@ -1504,6 +1535,16 @@ h6 {
     margin-bottom: -10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.msg-side-btn{
+    height: 5rem;
+    width: 5rem;
+    bottom: 6.5rem;
+    right: 1.6rem;
+  }
+  section.msg-side-btn .msg-btn img {
+    height: 4rem;
   }
 }
 @media (max-width: 400px){
