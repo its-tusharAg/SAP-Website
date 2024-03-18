@@ -344,7 +344,7 @@ section.about-section .about-container .about-us{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 4rem;
+  margin: 0 1rem;
 }
 .about-left {
   padding: 0 6rem 0 4rem;
